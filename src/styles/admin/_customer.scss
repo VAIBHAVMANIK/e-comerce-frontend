@@ -1,0 +1,11 @@
+.customer-container {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  overflow: auto;
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    @include heading(3px, 500, uppercase);
+  }
+}

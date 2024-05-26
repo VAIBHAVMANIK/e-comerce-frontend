@@ -1,0 +1,62 @@
+.AdminContainer {
+  @include grid(1fr 4fr, 2rem);
+  height: 100vh;
+  background-color: white;
+  > aside {
+    width: 100%;
+    background-color: antiquewhite;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 1rem;
+    z-index: 10;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .logo {
+      width: 90%;
+      height: 10vh;
+      > a {
+        width: 100%;
+        @include flex(row, center, center,0rem);
+        > img {
+          height: 10vh;
+          object-fit: cover;
+        }
+      }
+    }
+
+    //Profile Pic
+    .Profile {
+      @include flex(column);
+      margin: 2rem 1rem;
+      > img {
+        height: 15rem;
+        width: 14rem;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      > h3 {
+      }
+    }
+
+    > div {
+      margin: 2rem 1rem;
+      > h5 {
+        @include heading();
+      }
+      > ul {
+        @include flex(column, unset, unset, 0.5rem);
+        list-style-type: none;
+        label:hover {
+          cursor: pointer;
+        }
+        a {
+          border-radius: 5px;
+          padding: 0.5rem 1rem;
+          @include flex(row, unset);
+        }
+      }
+    }
+  }
+}

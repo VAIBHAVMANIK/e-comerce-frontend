@@ -1,0 +1,61 @@
+.AdminContainer {
+  main {
+    .productAnalytics-container {
+      @include flex(column, center, center);
+      padding: 1rem;
+      width: 450px;
+      margin-block: 1rem;
+      margin-inline: auto;
+
+      .Order-Ratio {
+        @include flex(column, center, center, 0);
+        @include boxShadow;
+        width: 100%;
+        border-radius: 1rem;
+        padding: 1rem;
+        > h2 {
+          @include heading();
+          font-size: 1.2em;
+          text-align: center
+        }
+      }
+      .Product-Category {
+        @include flex(column, center, center, 0);
+        width: 100%;
+        @include boxShadow;
+        border-radius: 1rem;
+        padding: 1rem;
+        > h2 {
+          @include heading();
+          font-size: 1.2em;
+          text-align: center
+        }
+      }
+      .Stock-avail {
+        @include flex(column, center, center, 0);
+        width: 100%;
+        @include boxShadow;
+        border-radius: 1rem;
+        padding: 1rem;
+        > h2 {
+          @include heading();
+          font-size: 1.2em;
+          text-align: center
+        }
+      }
+      .Revenue-Dist {
+        @include flex(column, center, center, 0);
+        width: 100%;
+        height: max-content;
+        @include boxShadow;
+        border-radius: 1rem;
+        padding: 1rem;
+        > h2 {
+          @include heading();
+          font-size: 1.2em;
+          text-align: center
+        }
+      }
+    }
+  }
+}

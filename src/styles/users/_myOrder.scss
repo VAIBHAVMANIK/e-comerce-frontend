@@ -1,0 +1,32 @@
+.main-container {
+  .my-orders-container {
+    margin-top: 10vh;
+    height: 90vh;
+    width: 100%;
+    @include flex(row, center, flex-start, 0);
+    .my-order {
+      width: 90%;
+      .myOrder-lists {
+        margin-top: 1rem;
+        margin-right: 1rem;
+        h2 {
+          text-align: center;
+          margin-bottom: 1rem;
+          margin-top: 1rem;
+          @include heading(3px, 500, uppercase);
+          text-decoration: underline;
+          text-underline-offset: 10px;
+        }
+        .table {
+          tbody {
+            td {
+              span {
+                font-weight: 700;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

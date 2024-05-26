@@ -1,0 +1,92 @@
+.product-manage {
+  @include flex(row);
+  height: 100vh;
+  .preview {
+    @include boxShadow;
+    border-radius: 1rem;
+    overflow-y: auto;
+    width: 100%;
+    min-height: 584px;
+    padding: 1rem;
+    max-width: 450px;
+    @include flex(column, center, center, 0);
+    position: relative;
+    > strong {
+      font-family: "Times New Roman", Times, serif;
+      font-weight: 500;
+      margin-top: 2rem;
+    }
+    > img {
+      height: 100%;
+      width: 90%;
+      object-fit: cover;
+    }
+    > span {
+      position: absolute;
+      top: 0.5rem;
+      right: 1rem;
+      font-size: larger;
+    }
+    > h3 {
+      font-weight: 500;
+    }
+  }
+
+  .manage-Product {
+    @include flex(column, center, unset, 0);
+    .form-container {
+      h2 {
+        @include heading(2px, 500);
+        padding-inline: 1rem;
+        text-align: center;
+        margin-top: 1rem;
+      }
+      max-width: 400px;
+      @include boxShadow;
+      border-radius: 1rem;
+      form {
+        padding: 1rem;
+        width: 100%;
+        > div {
+          padding: 0.5rem;
+          @include flex(column, center, unset, 0);
+          > input {
+            padding: 0.8rem;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.559);
+          }
+          > input[type="file"] {
+            border: 1px solid rgba(0, 0, 0, 0.559);
+            cursor: pointer;
+          }
+        }
+        .img-box {
+          align-items: center;
+          > img {
+            padding: none;
+            width: 5rem;
+            height: 5rem;
+            object-fit: contain;
+            border-radius: 2px;
+          }
+        }
+
+        > button {
+          margin-top: 1rem;
+          padding: 1rem;
+          width: 100%;
+          border: none;
+          color: white;
+          font-size: medium;
+          border-radius: 3px;
+          background-color: rgba(31, 105, 243, 0.705);
+          cursor: pointer;
+          &:hover {
+            background-color: rgb(31, 105, 243);
+          }
+        }
+      }
+    }
+  }
+}

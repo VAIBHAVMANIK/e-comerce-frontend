@@ -1,0 +1,116 @@
+.AdminContainer {
+  overflow: auto;
+  .widget-container {
+    @include flex(row, space-between);
+    margin-top: 2rem;
+    margin-right: 1rem;
+  }
+
+  .graph-container {
+    margin-top: 1rem;
+    margin-right: 1rem;
+    padding: 2rem 1rem, 0, 0;
+    @include flex(row, unset, unset, 2rem);
+
+    .graph {
+      width: 100%;
+      min-width: 20rem;
+      @include heading(2px, unset, uppercase);
+      @include boxShadow;
+      border-radius: 0.5rem;
+      padding: 1rem, 2rem, 0, 0;
+      > h3 {
+        margin-top: 1rem;
+        text-align: center;
+      }
+
+      .chart-container {
+        padding-left: 2rem;
+      }
+    }
+
+    .Inventory {
+      min-width: 16rem;
+      > h3 {
+        margin-top: 1rem;
+        @include heading(2px, unset, uppercase);
+      }
+
+      @include flex(column, unset, unset, 2rem);
+      @include boxShadow;
+      border-radius: 0.5rem;
+      padding: 0 2rem, 0;
+      text-align: center;
+    }
+    > div {
+      overflow-y: auto;
+    }
+
+    .Inventory-Card {
+      width: 100%;
+      @include flex(row, space-between);
+      padding: 1rem;
+      > h5 {
+        letter-spacing: 2px;
+        font-weight: 500;
+      }
+      > div {
+        width: 5rem;
+        background-color: rgb(210, 210, 210);
+        height: 0.5rem;
+        border-radius: 2rem;
+        flex: none;
+        > div {
+          height: 100%;
+          border-radius: 2rem;
+        }
+      }
+    }
+  }
+
+  .bottom-container {
+    @include flex(row, flex-start, unset, 2rem);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+    > div {
+      @include boxShadow;
+      border-radius: 0.5rem;
+    }
+
+    .gender-chart {
+      padding: 1rem;
+
+      max-width: 20rem;
+      max-height: min-content;
+      text-align: center;
+      > h2 {
+        text-align: center;
+        @include heading(3px, 300, uppercase);
+      }
+
+      .chart-container {
+        margin-top: -2rem;
+        @include flex(column, center, center, unset);
+        position: relative;
+        > span {
+          font-size: 1.8em;
+          position: absolute;
+          top: 50%;
+        }
+      }
+    }
+  }
+
+  .TopTractionContainer {
+    margin-right: 1rem;
+    width: 100%;
+    overflow-x: auto;
+    padding: 1rem;
+    > h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      @include heading(3px, 300, uppercase);
+    }
+  }
+}

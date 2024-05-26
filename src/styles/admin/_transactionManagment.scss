@@ -1,0 +1,68 @@
+.AdminContainer {
+  height: 100vh;
+  .Transaction-manage {
+    height: 100%;
+    @include flex();
+    .Order-Card {
+      padding: 1rem;
+      max-height: 500px;
+      min-height:500px;
+      min-width: max-content;
+      @include boxShadow;
+      border-radius: 1rem;
+      overflow-y: auto;
+      > h2 {
+        text-align: center;
+        @include heading(2px, 400);
+        margin-bottom: 1rem;
+      }
+      > div {
+        @include flex();
+        padding: 1rem;
+        > img {
+          border-radius: 0.8rem;
+          height: 5rem;
+          width: 5rem;
+        }
+      }
+    }
+    .Order-Info {
+      @include boxShadow;
+      border-radius: 1rem;
+      padding: 1rem;
+      max-height: 500px;
+      min-height:500px;
+      min-width: max-content;
+      > h2 {
+        @include heading(2px, 400);
+        text-align: center;
+      }
+      > p {
+        font-size: medium;
+        > span {
+          font-weight: 500;
+        }
+      }
+      > h3 {
+        margin-top: 1rem;
+      }
+      > h5 {
+        margin-top: 1rem;
+      }
+      > button {
+        margin-top: 1rem;
+        padding: 1rem;
+        width: 100%;
+        border: none;
+        color: white;
+        font-size: medium;
+        border-radius: 3px;
+        background-color: rgba(31, 105, 243, 0.705);
+        cursor: pointer;
+        &:hover {
+          background-color: rgb(31, 105, 243);
+        }
+      }
+    }
+  }
+}

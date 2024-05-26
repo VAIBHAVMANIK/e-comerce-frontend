@@ -1,0 +1,111 @@
+.table {
+  border-collapse: collapse;
+  // border: 1px solid rgba(0, 0, 0, 0.152);
+  // border-radius: 10rem;
+  width: 100%;
+  font-family: "Times New Roman", Times, serif;
+  // margin-right: 1rem;
+
+  td,
+  th {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.264);
+    padding: 0.8rem;
+    text-align: left;
+    vertical-align: middle;
+    padding: 1rem;
+  }
+
+  td {
+    img {
+      width: 4rem;
+      height: 4rem;
+      object-fit: contain;
+      border-radius: 10px;
+    }
+    a {
+      text-decoration: none;
+      background-color: rgba(44, 104, 255, 0.455);
+      color: rgba(44, 104, 255);
+      padding: 0.25rem 0.5rem;
+      border-radius: 10px;
+    }
+    button {
+      width: 2rem;
+      height: 2rem;
+      font-size: 1.1rem;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      cursor: pointer;
+      color: rgb(255, 44, 44);
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  thead {
+    th {
+      &:first-child {
+        border-top-left-radius: 0.5rem;
+      }
+      &:last-child {
+        border-top-right-radius: 0.5rem;
+      }
+    }
+    tr {
+      background-color: rgba(162, 161, 161, 0.203);
+    }
+  }
+
+  tbody {
+    tr {
+      &:hover {
+        background-color: rgba(236, 235, 235, 0.578);
+      }
+      td {
+        &:first-child {
+          border-left: 1px solid rgba(0, 0, 0, 0.152);
+        }
+        &:last-child {
+          border-right: 1px solid rgba(0, 0, 0, 0.152);
+        }
+      }
+      &:last-child {
+        td {
+          &:first-child {
+            border-bottom-left-radius: 0.5rem;
+          }
+          &:last-child {
+            border-bottom-right-radius: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.table-pagination {
+  @include flex();
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  > span {
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  > button {
+    padding: 0.7rem;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: rgba(0, 166, 255, 0.638);
+    border-radius: 2rem;
+    &:hover {
+      background-color: rgb(0, 166, 255);
+    }
+    &:disabled {
+      background-color: rgba(0, 17, 113, 0.477);
+      cursor: not-allowed;
+    }
+  }
+}

@@ -1,0 +1,99 @@
+.carousel {
+  @include flex(row, center, unset, 0rem);
+  height: inherit;
+  position: relative;
+  width: inherit;
+  .slide {
+    @include flex(row, center, center, 0rem);
+    width: 100%;
+    background: radial-gradient(rgb(249, 243, 234), #fafafc);
+    animation: fadeIn 0.5s ease-in-out;
+    .desc-carosel{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      height: 100%;
+      width: 50%;
+      flex-grow: 1;
+      @include flex(column, center, unset, 0rem);
+      .slide-title {
+        font-size: 2.5em;
+        text-align: center;
+        font-weight: 400;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-transform: uppercase;
+        text-underline-offset: 10px;
+      }
+      .slide-companyName{
+        padding: 1rem;
+      }
+
+      .slide-description {
+        font-size: 1.2em;
+        text-align: center;
+        color: #616162;
+        text-align: justify;
+        padding: 1rem;
+
+      }
+    }
+    > img {
+      height: 400px;
+      width: 679px;
+      object-fit: contain;
+      // aspect-ratio: 16/9;
+    }
+    .exp-btn {
+      height: 400px;
+      width: 150px;
+      background-color: rgb(249, 243, 234);
+      border: 1px solid rgb(152, 143, 143);
+      border: none;
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.112);
+      }
+      >svg{
+        font-size: 2rem;
+        color: rgb(249, 221, 81);
+      }
+    }
+  }
+  .slide-hidden {
+    display: none;
+  }
+
+  .indicators {
+    @include flex(row, unset, unset, 0.2rem);
+    position: absolute;
+    bottom: 1rem;
+    right: 25%;
+    .indicator {
+      background-color: rgb(10, 0, 0);
+      height: 0.6rem;
+      width: 0.6rem;
+      border: none;
+      outline: none;
+      border-radius: 100%;
+      cursor: pointer;
+    }
+    .indicator-inactive {
+      background-color: rgb(94, 95, 95);
+    }
+  }
+}
+
+@keyframes fadeIn{
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes lefttoright{
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}

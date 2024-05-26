@@ -1,0 +1,36 @@
+.AdminContainer {
+  main {
+    .LineGraph-container {
+      width: 100%;
+      @include flex(column, center, center);
+      text-align: center;
+      .active-users {
+        @include boxShadow;
+        width: 90%;
+        padding: 1rem;
+        border-radius: 1rem;  
+        > h2 {
+          @include heading(5px, 600); 
+        }
+      }
+      .total-revenue {
+        @include boxShadow;
+        width: 90%;
+        padding: 1rem;
+        border-radius: 1rem;
+        > h2 {
+          @include heading(5px, 600);
+        }
+      }
+      .total-discount {
+        @include boxShadow;
+        width: 90%;
+        padding: 1rem;
+        border-radius: 1rem;
+        > h2 {
+          @include heading(5px, 600);
+        }
+      }
+    }
+  }
+}

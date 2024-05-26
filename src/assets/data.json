@@ -1,0 +1,121 @@
+{
+  "Category": [
+    {
+      "id": 1,
+      "title": "Laptop",
+      "stock": 95
+    },
+    {
+      "id": 2,
+      "title": "Shoes",
+      "stock": 74
+    },
+    {
+      "id": 3,
+      "title": "Mobiles",
+      "stock": 15
+    },
+    {
+      "id": 4,
+      "title": "Grocerys",
+      "stock": 60
+    },
+    {
+      "id": 5,
+      "title": "Furnitures",
+      "stock": 45
+    }
+  ],
+  "TopTransactionInfoArray": [
+    {
+      "Id": "ABC123",
+      "Name": "Transaction 1",
+      "Quantity": 50,
+      "Discount": 10,
+      "Amount": 450.75,
+      "Status": "Completed"
+    },
+    {
+      "Id": "DEF456",
+      "Name": "Transaction 2",
+      "Quantity": 30,
+      "Discount": 5,
+      "Amount": 250.5,
+      "Status": "Pending"
+    },
+    {
+      "Id": "GHI789",
+      "Name": "Transaction 3",
+      "Quantity": 20,
+      "Discount": 8,
+      "Amount": 180.25,
+      "Status": "Completed"
+    },
+    {
+      "Id": "JKL012",
+      "Name": "Transaction 4",
+      "Quantity": 45,
+      "Discount": 15,
+      "Amount": 600.0,
+      "Status": "Completed"
+    },
+    {
+      "Id": "MNO345",
+      "Name": "Transaction 5",
+      "Quantity": 55,
+      "Discount": 12,
+      "Amount": 530.75,
+      "Status": "Pending"
+    }
+  ],
+  "Slides": [
+    {
+      "id": 1,
+      "title": "Smartphone",
+      "companyName": "Apple 13",
+      "description": "A handheld device that combines a mobile phone with computing functions, typically featuring a touchscreen interface, internet access, and various apps for communication, entertainment, and productivity.",
+      "src": "https://m.media-amazon.com/images/I/61bK6PMOC3L._AC_UF1000,1000_QL80_.jpg",
+      "alt": "Img 1"
+    },
+    {
+      "id": 2,
+      "title": "Wireless Earbuds",
+      "companyName": "Leaf",
+      "description": "Compact audio devices that fit directly into the ear, providing wireless connectivity to smartphones and other devices, allowing users to listen to music, make calls, and interact with voice assistants without the hassle of cords.",
+      "src": "https://m.media-amazon.com/images/I/716gAr0KA6L.jpg",
+      "alt": "Img 2"
+    },
+    {
+      "id": 3,
+      "title": "Smartwatch",
+      "companyName": "Galaxy Watch",
+      "description": "A wearable computing device worn on the wrist, typically offering features such as fitness tracking, notifications, apps, and in some cases, cellular connectivity for making calls and sending messages.",
+      "src": "https://www.cnet.com/a/img/resize/770007077c38361ca13ef0b0aa4c208f88fa2053/hub/2023/09/20/9e9b8e2b-04ee-4087-b819-c99ec8bbc980/apple-watch-ultra-2-7.jpg?auto=webp&fit=crop&height=1200&width=1200",
+      "alt": "Img 3"
+    },
+    {
+      "id": 4,
+      "title": "Virtual Reality Headset",
+      "companyName": "Apple",
+      "description": "A head-mounted display that immerses the user in a virtual environment, often used for gaming, simulations, and interactive experiences, providing an immersive 3D visual and auditory experience.",
+      "src": "https://staticg.sportskeeda.com/editor/2023/05/e12c1-16843456595466-1920.jpg",
+      "alt": "Img 4"
+    },
+    {
+      "id": 5,
+      "title": "Drone",
+      "companyName": "DJI",
+      "description": "An unmanned aerial vehicle controlled remotely or autonomously, often equipped with cameras or other sensors, used for aerial photography, videography, surveillance, and recreational flying.",
+      "src": "https://cdn.mos.cms.futurecdn.net/kXUY9hyetVzhZ2scwJP7p3-1200-80.jpg",
+      "alt": "Img 5"
+    },
+    {
+      "id": 6,
+      "title": "Smart Speaker",
+      "companyName": "Alexa",
+      "description": "A wireless speaker with built-in voice assistant capabilities, allowing users to play music, control smart home devices, get information, and perform various tasks using voice commands.",
+      "src": "https://i.gadgets360cdn.com/large/apple_homepod_mini_image_1609227640134.jpg",
+      "alt": "Img 6"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+.main-container {
+  .empty-cart {
+    height:calc(100vh - 10vh);
+    @include flex(column);
+    font-size: 1.5em;
+    > svg {
+      font-size: 5em;
+    }
+    > a {
+      padding: 0.8rem;
+      margin-block-start: 1rem;
+      background-color: antiquewhite;
+      box-shadow: 0px 5px 2px rgb(55, 55, 55);
+      outline: none;
+      border: none;
+      border-radius: 2px;
+      &:active {
+        transform: translateY(4px);
+        box-shadow: 0px 1px 2px rgb(55, 55, 55);
+      }
+    }
+  }
+  .cart-container {
+    height: calc(100vh - 10vh);
+    margin-top: 10vh;
+    @include flex(row, center, center, 5rem);
+    .cart {
+      width: 70%;
+      height: inherit;
+      overflow: auto;
+      &::-webkit-scrollbar {
+        display: hidden;
+      }
+      .cart-item {
+        @include boxShadow();
+        border-radius: 10px;
+        padding: 1rem;
+        margin-block: 1rem;
+        @include flex(row, space-between, center, 0rem);
+        .cart-item-info {
+          @include flex(row, center, center, 0rem);
+          > img {
+            width: 7rem;
+            height: 7rem;
+            object-fit: contain;
+          }
+          > div {
+            > p {
+              font-size: 1.2em;
+              border-bottom: 1px solid rgb(198, 198, 198);
+            }
+          }
+        }
+        > div {
+          > span {
+            font-size: 1.1em;
+            font-weight: 500;
+            margin-inline: 5px;
+          }
+          .cart-item-btn {
+            height: 1.5rem;
+            width: 1.5rem;
+            margin-inline: 5px;
+            font-size: 1em;
+            background-color: antiquewhite;
+            box-shadow: 0px 5px 2px rgb(55, 55, 55);
+            outline: none;
+            border: none;
+            border-radius: 2px;
+            &:active {
+              transform: translateY(4px);
+              box-shadow: 0px 1px 2px rgb(55, 55, 55);
+            }
+          }
+        }
+      }
+    }
+    > aside {
+      @include flex(column, center, stretch);
+      > form {
+        @include flex(column, center, unset, 0rem);
+        > input {
+          padding: 0.8rem;
+          outline: none;
+          border-radius: 5px;
+          border: 1px solid rgba(0, 0, 0, 0.559);
+          font-size: 1em;
+        }
+        > button {
+          padding: 0.8rem;
+          color: rgb(79, 76, 76);
+          margin-block-start: 1rem;
+          background-color: antiquewhite;
+          box-shadow: 0px 5px 2px rgb(55, 55, 55);
+          outline: none;
+          border: none;
+          border-radius: 2px;
+          &:active {
+            transform: translateY(4px);
+            box-shadow: 0px 1px 2px rgb(55, 55, 55);
+          }
+        }
+      }
+      .isValideCode {
+        @include flex(row, unset, center);
+        font-size: 1em;
+      }
+      > a {
+        text-align: center;
+        font-size: 1.2em;
+        color: rgb(79, 76, 76);
+        padding: 0.8rem;
+        background-color: antiquewhite;
+        box-shadow: 0px 5px 2px rgb(55, 55, 55);
+        outline: none;
+        border: none;
+        border-radius: 2px;
+        &:active {
+          transform: translateY(4px);
+          box-shadow: 0px 1px 2px rgb(55, 55, 55);
+        }
+      }
+    }
+  }
+}

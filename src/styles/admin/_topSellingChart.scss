@@ -1,0 +1,30 @@
+.AdminContainer {
+  .chart-container {
+    @include flex(column);
+    padding: 1rem;
+    margin-right: 1rem;
+    .User-Product {
+      @include boxShadow;
+      padding: 1rem;
+      border-radius: 1rem;
+      width: 100%;
+      > h2 {
+        text-align: center;
+        @include heading(2px, 500);
+        padding: 1rem;
+      }
+    }
+    .Top-Selling {
+      margin-top: 1rem;
+      @include boxShadow;
+      padding: 1rem;
+      border-radius: 1rem;
+      width: 100%;
+      > h2 {
+        text-align: center;
+        @include heading(2px, 400);
+        padding: 1rem;
+      }
+    }
+  }
+}

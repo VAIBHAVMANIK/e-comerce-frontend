@@ -1,0 +1,116 @@
+.main-container {
+  .signIn-signUp-container {
+    margin-top: 10vh;
+    height: 90vh;
+    width: 100%;
+    @include flex();
+    position: fixed;
+    top: 0;
+    left: 0;
+    .signIn-signUp-box {
+      height: 500px;
+      width: 450px;
+      @include boxShadow;
+      border-radius: 10px;
+      overflow: hidden;
+      .toggle-container {
+        > div {
+          width: 100%;
+          > button {
+            background-color: rgb(251, 193, 117);
+            height: 3px;
+            width: 50%;
+            border: none;
+            transition: all 0.5s;
+          }
+          .toggle-tab {
+            @include flex(row, space-evenly, center);
+            > p {
+              height: 3vh;
+              color: rgba(0, 0, 0, 0.678);
+              transition: all 0.5s;
+              cursor: pointer;
+              display: grid;
+              place-items: center;
+              width: 100%;
+              &:hover {
+                color: rgb(252, 221, 181);
+              }
+            }
+          }
+        }
+      }
+
+      .signinform,
+      .signUpform {
+        box-sizing: border-box;
+        height: 95%;
+        width: 100%;
+        transition: all 0.5s;
+        @include flex(column, space-evenly, center);
+        > h1 {
+          @include heading(3px, 500);
+        }
+        > div {
+          width: 90%;
+          padding: 0.8rem;
+          border: 1px solid black;
+          @include flex();
+          > input {
+            width: 100%;
+            padding: 0.8rem;
+            border: none;
+            outline: none;
+            font-size: 1rem;
+          }
+          > svg {
+            font-size: 1.5rem;
+          }
+        }
+        .forget {
+          border: none;
+          > a {
+            color: rgba(0, 0, 0, 0.507);
+            transition: all 0.3s;
+
+            &:hover {
+              color: black;
+              text-decoration: underline;
+            }
+          }
+        }
+
+        > button {
+          padding: 1rem;
+          width: 250px;
+          @include flex();
+          border: none;
+          background-color: rgb(249, 180, 90);
+          color: white;
+          font-size: 1rem;
+          cursor: pointer;
+          transition: all 0.5s;
+          border-radius: 4px;
+          outline: none;
+          &:hover {
+            background-color: rgb(250, 162, 47);
+          }
+        }
+      }
+    }
+  }
+}
+.shiftToLeft {
+  transform: translateX(-100%);
+}
+.shiftToNeutral {
+  transform: translateX(0%);
+}
+
+.shiftToNeutralForm {
+  transform: translateX(0%) translateY(-100%);
+}
+
+.shiftToRight {
+  transform: translateX(100%);
+}
